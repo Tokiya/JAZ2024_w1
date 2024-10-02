@@ -108,6 +108,13 @@ public class Main {
 //        animals.add(new Dog());
 //        animals.add(new Animal());
 //        catsList.add(new Cat());
+        /**
+        * Gdzie wtedy jest sens używania taka składnia?
+         * Najczęściej takie konstrukcje śą wykorzystywane przy deklarowaniu metod,
+         * w których definicjach wymagamy kolkcje tylko do odczytu.
+        */
+//        var animals2= createList();
+//        tameAnimals(List.of(new Cat(), new Dog(), new Dog()));
 
         /**
          * Jeśli potrzebujemy mieć możliwość, dodawania elementów do kolekcji
@@ -140,6 +147,15 @@ public class Main {
 
 //        NoiseRecorder<Cat, Audio> recorder = new NoiseRecorder<>();
 //        recorder.recordOn(new Tape());
+    }
+
+    static List<? extends Animal> createList(){
+        return List.of(new Cat(), new Dog(), new Dog());
+    }
+    static void tameAnimals(List<? extends Animal> animals){
+        for (Animal animal : animals) {
+            animal.tame();
+        }
     }
 
     static void addAnimal(List<Animal> animals){
