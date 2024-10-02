@@ -75,7 +75,7 @@ public class Main {
          * Wildcardy wprowadzają większą swobodę wprowadzania parametrów typu
          */
         List<?> myList = new ArrayList<Animal>();
-//        myList = new ArrayList<Object>();
+        myList = new ArrayList<Object>();
 //        myList = new ArrayList<Integer>();
 //        myList = new ArrayList<String>();
 //        myList = new ArrayList<>();
@@ -85,7 +85,7 @@ public class Main {
          * spróbuj dodać jakiś element do tej kolekcji
          */
 //        myList.add(new Object());
-
+//        myList.add(null)
 //        for (Object obj :  myList) {
 //            System.out.println(obj);
 //        }
@@ -95,11 +95,11 @@ public class Main {
          * aby wprowadzić pewne ograniczenia,
          * oraz spowodować aby kolekcja obiektów była bardziej użyteczna
          */
-
-        List<? extends Animal>  animals = new ArrayList<Animal>();
-        List<? extends Animal> catsList = new ArrayList<Cat>();
-        List<? extends Animal> dogsList = new ArrayList<Dog>();
-        List<? extends Animal> terriers = new ArrayList<Terrier>();
+//
+//        List<? extends Animal>  animals = new ArrayList<Animal>();
+//        List<? extends Animal> catsList = new ArrayList<Cat>();
+//        List<? extends Animal> dogsList = new ArrayList<Dog>();
+//        List<? extends Animal> terriers = new ArrayList<Terrier>();
 //        List<? extends Animal> otherLIst = new ArrayList<Object>(); // błąd kompilacji
 //        List<? extends Animal> otherLIst = new ArrayList<String>(); // błąd kompilacji
         /**
